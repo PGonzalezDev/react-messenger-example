@@ -6,6 +6,7 @@ const Login = function() {
 
     const handleLogin = () => {
         localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
         window.location.replace("/Home");
     }
 

@@ -1,5 +1,6 @@
 import './App.css'
 import Login from './login/Login.jsx'
+import Chat from './Chat/Chat.jsx'
 
 function App() {
   const logoutHandler = () =>{
@@ -14,7 +15,12 @@ function App() {
       { user && 
           <>
             <div>Bienvenido a React Messenger</div><br />
-            <button onClick={logoutHandler}>Cerrar Sesion</button>
+            <header>
+              <button onClick={logoutHandler}>Cerrar Sesion</button>
+            </header>
+            <div>
+              <Chat />
+            </div>
           </>
       }
     </>
