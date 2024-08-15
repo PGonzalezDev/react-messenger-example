@@ -1,10 +1,10 @@
 import React from "react";
 
-const MemberItem = ({member}) => {
+const MemberItem = ({member, setMemberId}) => {
     
     return(
         <li key={member.memberId} className="p-2 border-bottom bg-body-tertiary">
-            <a href="#!" className="d-flex justify-content-between">
+            <a href="#!" className="d-flex justify-content-between" onClick={() => { setMemberId(member.memberId) }}>
             <div className="d-flex flex-row">
                 <img src={member.avatarUrl} alt="avatar"
                 className="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60" />

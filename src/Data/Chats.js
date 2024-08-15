@@ -5,7 +5,7 @@ const Chats = [
             {
                 'avatarUrl': 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-8.webp',
                 'name': 'John Doe',
-                'text': 'Hello, Are you there?',
+                'text': 'Hello, Are you there? I am glad to meet you',
                 'clock': 'Just Now'
             }
         ]

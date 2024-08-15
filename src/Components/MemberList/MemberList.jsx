@@ -2,11 +2,11 @@ import React from "react";
 import MemberItem from "../MemberItem/MemberItem";
 import Members from "../../Data/Members.js";
 
-const MemberList = () => {
+const MemberList = ({setMemberId}) => {
     const items = []
 
     for (let i = 0; i < Members.length; i++) {
-        items.push(<MemberItem member={Members[i]}/>)
+        items.push(<MemberItem member={Members[i]} setMemberId={setMemberId}/>)
     }
 
     return(
