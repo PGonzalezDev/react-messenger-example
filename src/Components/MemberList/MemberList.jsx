@@ -1,6 +1,6 @@
 import React from "react";
-import MemberItem from "../FriendItem/MemberItem";
-import Members from "../../Data/members";
+import MemberItem from "../MemberItem/MemberItem";
+import Members from "../../Data/Members.js";
 
 const MemberList = () => {
     const items = []

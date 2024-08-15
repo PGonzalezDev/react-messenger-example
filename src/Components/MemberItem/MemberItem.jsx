@@ -3,7 +3,7 @@ import React from "react";
 const MemberItem = ({member}) => {
     
     return(
-        <li className="p-2 border-bottom bg-body-tertiary">
+        <li key={member.memberId} className="p-2 border-bottom bg-body-tertiary">
             <a href="#!" className="d-flex justify-content-between">
             <div className="d-flex flex-row">
                 <img src={member.avatarUrl} alt="avatar"
